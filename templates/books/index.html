@@ -1,0 +1,8 @@
+<h1>My Book Collection</h1>
+{% if book_list %}
+    <ul>
+    {% for book in book_list %}
+        <li>{{book.title}} | {{book.author}} | {{book.read}}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
